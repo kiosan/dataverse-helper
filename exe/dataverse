@@ -18,6 +18,6 @@ SETTING_FILE
 
 puts ">> Go to setting.yml to update the configuration".colorize(:blue)
 
-Dir.mkdir('./config') unless File.exists?('./config')
+Dir.mkdir('./config') unless File.exist?('./config')
 File.open('./config/dataverse.yml', 'w') { |f| f.write(setting_file) }
 
